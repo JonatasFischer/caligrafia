@@ -19,6 +19,51 @@
     "observation": "Observation",
     "score": "Score"
   },
+  "course": {
+    "map": "Course map",
+    "mapKicker": "Complete sequence by week and day",
+    "mapNote": "Every day has a unique code, required sheets, and its own assessment.",
+    "week": "Week {{number}}",
+    "dayCode": "Day code",
+    "focus": "Focus",
+    "requiredSheets": "Required sheets",
+    "activitySequence": "Activity sequence",
+    "dailyAssessment": "Daily assessment",
+    "assessmentCriterion": "Criterion",
+    "adultRead": "Could an adult read it without help?",
+    "weeklyReview": "Weekly review",
+    "weeklyDecision": "Weekly decision",
+    "weeklyDecisionHint": "Use the weekly average and a real writing sample to decide whether to move on, repeat, or slow down.",
+    "bestLine": "Best line",
+    "hardLetters": "Hardest letters",
+    "nextStep": "Next step",
+    "activities": {
+      "setup": "Preparation and posture",
+      "guidedPractice": "Guided letter practice",
+      "wordPractice": "Daily words",
+      "sentencePractice": "Daily sentence",
+      "review": "Review and correction",
+      "assessment": "Daily assessment"
+    },
+    "sheets": {
+      "dailyOverview": "Daily overview",
+      "guidedPractice": "Guided practice",
+      "wordPractice": "Words",
+      "sentencePractice": "Sentence",
+      "dailyAssessment": "Daily assessment",
+      "weeklyReview": "Weekly review"
+    },
+    "adultReadOptions": {
+      "yes": "yes",
+      "partial": "partial",
+      "no": "no"
+    },
+    "decisions": {
+      "moveOn": "move on",
+      "repeat": "repeat week",
+      "slowDown": "slow down"
+    }
+  },
   "sections": {
     "coverKicker": "Printable A4 workbook",
     "coverTitle": "Print-writing, patience, and concentration training",

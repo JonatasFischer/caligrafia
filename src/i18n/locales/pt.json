@@ -19,6 +19,51 @@
     "observation": "Observação",
     "score": "Nota"
   },
+  "course": {
+    "map": "Mapa do curso",
+    "mapKicker": "Sequência completa por semana e por dia",
+    "mapNote": "Cada dia tem código único, folhas obrigatórias e avaliação própria.",
+    "week": "Semana {{number}}",
+    "dayCode": "Código do dia",
+    "focus": "Foco",
+    "requiredSheets": "Folhas obrigatórias",
+    "activitySequence": "Sequência de atividades",
+    "dailyAssessment": "Avaliação diária",
+    "assessmentCriterion": "Critério",
+    "adultRead": "Adulto conseguiu ler sem ajuda?",
+    "weeklyReview": "Revisão semanal",
+    "weeklyDecision": "Decisão da semana",
+    "weeklyDecisionHint": "Use a média da semana e uma amostra real para decidir se avança, repete ou reduz velocidade.",
+    "bestLine": "Melhor linha",
+    "hardLetters": "Letras mais difíceis",
+    "nextStep": "Próximo passo",
+    "activities": {
+      "setup": "Preparação e postura",
+      "guidedPractice": "Treino guiado de letras",
+      "wordPractice": "Palavras do dia",
+      "sentencePractice": "Frase do dia",
+      "review": "Revisão e correção",
+      "assessment": "Avaliação diária"
+    },
+    "sheets": {
+      "dailyOverview": "Resumo do dia",
+      "guidedPractice": "Treino guiado",
+      "wordPractice": "Palavras",
+      "sentencePractice": "Frase",
+      "dailyAssessment": "Avaliação diária",
+      "weeklyReview": "Revisão semanal"
+    },
+    "adultReadOptions": {
+      "yes": "sim",
+      "partial": "parcial",
+      "no": "não"
+    },
+    "decisions": {
+      "moveOn": "avançar",
+      "repeat": "repetir semana",
+      "slowDown": "reduzir velocidade"
+    }
+  },
   "sections": {
     "coverKicker": "Caderno imprimível A4",
     "coverTitle": "Treino de letra de forma, paciência e concentração",

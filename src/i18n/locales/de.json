@@ -19,6 +19,51 @@
     "observation": "Beobachtung",
     "score": "Punktzahl"
   },
+  "course": {
+    "map": "Kursübersicht",
+    "mapKicker": "Vollständige Reihenfolge nach Woche und Tag",
+    "mapNote": "Jeder Tag hat einen eindeutigen Code, Pflichtblätter und eine eigene Bewertung.",
+    "week": "Woche {{number}}",
+    "dayCode": "Tagescode",
+    "focus": "Fokus",
+    "requiredSheets": "Pflichtblätter",
+    "activitySequence": "Ablauf der Aktivitäten",
+    "dailyAssessment": "Tagesbewertung",
+    "assessmentCriterion": "Kriterium",
+    "adultRead": "Konnte ein Erwachsener es ohne Hilfe lesen?",
+    "weeklyReview": "Wochenreview",
+    "weeklyDecision": "Wochenentscheidung",
+    "weeklyDecisionHint": "Nutze den Wochendurchschnitt und eine echte Schreibprobe, um zu entscheiden: weitergehen, wiederholen oder langsamer arbeiten.",
+    "bestLine": "Beste Zeile",
+    "hardLetters": "Schwierigste Buchstaben",
+    "nextStep": "Nächster Schritt",
+    "activities": {
+      "setup": "Vorbereitung und Haltung",
+      "guidedPractice": "Geführtes Buchstabentraining",
+      "wordPractice": "Wörter des Tages",
+      "sentencePractice": "Satz des Tages",
+      "review": "Prüfen und Korrigieren",
+      "assessment": "Tagesbewertung"
+    },
+    "sheets": {
+      "dailyOverview": "Tagesübersicht",
+      "guidedPractice": "Geführtes Üben",
+      "wordPractice": "Wörter",
+      "sentencePractice": "Satz",
+      "dailyAssessment": "Tagesbewertung",
+      "weeklyReview": "Wochenreview"
+    },
+    "adultReadOptions": {
+      "yes": "ja",
+      "partial": "teilweise",
+      "no": "nein"
+    },
+    "decisions": {
+      "moveOn": "weitergehen",
+      "repeat": "Woche wiederholen",
+      "slowDown": "Tempo reduzieren"
+    }
+  },
   "sections": {
     "coverKicker": "Druckbares A4-Heft",
     "coverTitle": "Training für Druckschrift, Geduld und Konzentration",

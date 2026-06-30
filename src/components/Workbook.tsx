@@ -2,17 +2,17 @@ import type { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import {
   alphabet,
-  practiceGroups,
   ratingCriteria,
   weeks,
-  type DayPlan,
   type WeekPlan,
 } from "../data/workbook";
 import { CaligraphyGuide } from "./CaligraphyGuide";
 import { Checklist } from "./Checklist";
+import { CourseMap } from "./CourseMap";
 import { Field } from "./Field";
-import { PracticeBlock } from "./PracticeBlock";
+import { LessonDayPage } from "./LessonDayPage";
 import { RatingTable } from "./RatingTable";
+import { WeeklyReview } from "./WeeklyReview";
 import { WorkbookPage } from "./WorkbookPage";
 
 type PageSpec = {
@@ -22,6 +22,8 @@ type PageSpec = {
   note?: string;
   body: ReactNode;
 };
+
+type Translate = (key: string, options?: Record<string, unknown>) => string;
 
 function textList(value: unknown): string[] {
   return Array.isArray(value) ? value.map(String) : [];
@@ -39,18 +41,19 @@ export function Workbook() {
     coverPage(t),
     parentGuidePage(t),
     routinePage(t),
+    courseMapPage(t),
     diagnosisPage(t),
     alphabetPage(t),
-    ...practiceGroups.map((group) => ({
-      key: `practice-${group.id}`,
-      title: t(`practiceGroups.${group.id}.name`),
-      kicker: t(`practiceGroups.${group.id}.focus`),
-      note: t("notes.review"),
-      body: <PracticeBlock group={group} />,
-    })),
     ...weeks.flatMap((week) => [
       weekOverviewPage(t, week),
-      ...week.days.map((day) => dayPracticePage(t, week, day)),
+      ...week.days.map((day) => ({
+        key: day.code,
+        title: `${day.code} · ${t(`days.${day.id}`)}`,
+        kicker: `${t("course.week", { number: week.number })} · ${t(`weeks.${week.id}.title`)}`,
+        note: t("notes.review"),
+        body: <LessonDayPage week={week} day={day} />,
+      })),
+      weeklyReviewPage(t, week),
     ]),
     blankDailyPage(t),
     monotonyPage(t),
@@ -77,7 +80,17 @@ export function Workbook() {
   );
 }
 
-function coverPage(t: (key: string) => string): PageSpec {
+function courseMapPage(t: Translate): PageSpec {
+  return {
+    key: "course-map",
+    title: t("course.map"),
+    kicker: t("course.mapKicker"),
+    note: t("course.mapNote"),
+    body: <CourseMap weeks={weeks} />,
+  };
+}
+
+function coverPage(t: Translate): PageSpec {
   return {
     key: "cover",
     title: t("sections.coverTitle"),
@@ -178,7 +191,7 @@ function routinePage(
   };
 }
 
-function diagnosisPage(t: (key: string) => string): PageSpec {
+function diagnosisPage(t: Translate): PageSpec {
   return {
     key: "diagnosis",
     title: t("sections.diagnosis"),
@@ -205,7 +218,7 @@ function diagnosisPage(t: (key: string) => string): PageSpec {
   };
 }
 
-function alphabetPage(t: (key: string) => string): PageSpec {
+function alphabetPage(t: Translate): PageSpec {
   return {
     key: "alphabet",
     title: t("sections.alphabet"),
@@ -237,13 +250,10 @@ function alphabetPage(t: (key: string) => string): PageSpec {
   };
 }
 
-function weekOverviewPage(
-  t: (key: string) => string,
-  week: WeekPlan,
-): PageSpec {
+function weekOverviewPage(t: Translate, week: WeekPlan): PageSpec {
   return {
     key: `${week.id}-overview`,
-    title: `${t("common.page")} ${week.number}: ${t(`weeks.${week.id}.title`)}`,
+    title: `${t("course.week", { number: week.number })}: ${t(`weeks.${week.id}.title`)}`,
     kicker: t(`weeks.${week.id}.goal`),
     note: t(`weeks.${week.id}.metric`),
     body: (
@@ -255,19 +265,27 @@ function weekOverviewPage(
         <table>
           <thead>
             <tr>
-              <th>{t("common.date")}</th>
-              <th>{t("sections.modelAndRepetition")}</th>
+              <th>{t("course.dayCode")}</th>
+              <th>{t("course.focus")}</th>
               <th>{t("common.words")}</th>
               <th>{t("sections.dailySentence")}</th>
+              <th>{t("course.requiredSheets")}</th>
             </tr>
           </thead>
           <tbody>
             {week.days.map((day) => (
               <tr key={`${week.id}-${day.id}`}>
-                <td>{t(`days.${day.id}`)}</td>
+                <td>
+                  <strong>{day.code}</strong>
+                </td>
                 <td className="model-text">{day.model}</td>
                 <td>{day.words.join(", ")}</td>
                 <td>{day.sentence}</td>
+                <td>
+                  {day.requiredSheets
+                    .map((sheet) => t(`course.sheets.${sheet}`))
+                    .join(" · ")}
+                </td>
               </tr>
             ))}
           </tbody>
@@ -277,52 +295,17 @@ function weekOverviewPage(
   };
 }
 
-function dayPracticePage(
-  t: (key: string) => string,
-  week: WeekPlan,
-  day: DayPlan,
-): PageSpec {
+function weeklyReviewPage(t: Translate, week: WeekPlan): PageSpec {
   return {
-    key: `${week.id}-${day.id}`,
-    title: `${t(`days.${day.id}`)} · ${t(`weeks.${week.id}.title`)}`,
-    kicker: day.model,
-    note: t("notes.review"),
-    body: (
-      <>
-        <div className="two-column compact-columns">
-          <div className="info-card soft">
-            <p>
-              <strong>{t("common.timer")}:</strong> _____ min
-            </p>
-            <p>
-              <strong>{t("common.breaks")}:</strong> _____
-            </p>
-          </div>
-          <div className="info-card">
-            <p>
-              <strong>{t("common.words")}:</strong> {day.words.join(", ")}
-            </p>
-            <p>
-              <strong>{t("sections.dailySentence")}:</strong> {day.sentence}
-            </p>
-          </div>
-        </div>
-        <h3>{t("sections.modelAndRepetition")}</h3>
-        <CaligraphyGuide trace={day.model} rows={4} />
-        <h3>{t("sections.dailyWords")}</h3>
-        <CaligraphyGuide trace={day.words.join("   ")} rows={4} compact />
-        <h3>{t("sections.dailySentence")}</h3>
-        <p className="model-text">{day.sentence}</p>
-        <CaligraphyGuide rows={3} compact />
-        <RatingTable
-          criteria={["form", "line", "spacing", "speed", "patience", "review"]}
-        />
-      </>
-    ),
+    key: `${week.id}-review`,
+    title: `${t("course.weeklyReview")} · ${t("course.week", { number: week.number })}`,
+    kicker: t(`weeks.${week.id}.metric`),
+    note: t("notes.quality"),
+    body: <WeeklyReview week={week} />,
   };
 }
 
-function blankDailyPage(t: (key: string) => string): PageSpec {
+function blankDailyPage(t: Translate): PageSpec {
   return {
     key: "blank-daily",
     title: t("sections.blankDailySheet"),
@@ -339,7 +322,7 @@ function blankDailyPage(t: (key: string) => string): PageSpec {
   };
 }
 
-function monotonyPage(t: (key: string) => string): PageSpec {
+function monotonyPage(t: Translate): PageSpec {
   return {
     key: "monotony",
     title: t("sections.monotonySheet"),
@@ -382,7 +365,7 @@ function deliveryChecklistPage(
   };
 }
 
-function weeklyRubricPage(t: (key: string) => string): PageSpec {
+function weeklyRubricPage(t: Translate): PageSpec {
   return {
     key: "weekly-rubric",
     title: t("sections.weeklyRubric"),
@@ -398,7 +381,7 @@ function weeklyRubricPage(t: (key: string) => string): PageSpec {
   };
 }
 
-function copyDictationPage(t: (key: string) => string): PageSpec {
+function copyDictationPage(t: Translate): PageSpec {
   return {
     key: "copy-dictation",
     title: `${t("sections.copyFromFar")} · ${t("sections.dictation")}`,
@@ -425,7 +408,7 @@ function copyDictationPage(t: (key: string) => string): PageSpec {
   };
 }
 
-function portfolioPage(t: (key: string) => string): PageSpec {
+function portfolioPage(t: Translate): PageSpec {
   return {
     key: "portfolio",
     title: `${t("sections.portfolio")} · ${t("sections.maintenance")}`,
