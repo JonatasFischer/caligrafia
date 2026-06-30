@@ -318,7 +318,7 @@ th {
   position: absolute;
   top: 67.5%;
   left: 8mm;
-  transform: translateY(-0.9em);
+  transform: translateY(-0.94em);
   color: rgb(74 98 122 / 0.36);
   font-family: var(--model-font);
   font-size: 10.4mm;
