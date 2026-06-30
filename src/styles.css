@@ -373,9 +373,9 @@ th {
   }
 
   .print-page {
-    display: flex;
-    flex-direction: column;
-    height: 260mm;
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr) auto;
+    height: 254mm;
     min-height: 0;
     overflow: hidden;
     padding: 0;
@@ -404,12 +404,16 @@ th {
 
   .page-footer {
     position: static;
-    margin-top: auto;
+    align-self: end;
+    margin-top: 2mm;
+    padding-top: 1mm;
     font-size: 8pt;
   }
 
   .page-body {
-    padding-bottom: 2mm;
+    min-height: 0;
+    overflow: hidden;
+    padding-bottom: 0;
   }
 
   th,
