@@ -1,0 +1,425 @@
+@page {
+  size: A4;
+  margin: 11mm 10mm 12mm;
+}
+
+:root {
+  color: #182635;
+  background: #eef4f8;
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  --model-font:
+    "GrundschriftRegular", "GrundschriftNormal", "Grundschrift", "Andika",
+    "Comic Sans MS", "Arial Rounded MT Bold", sans-serif;
+  --ink: #102a43;
+  --muted: #607487;
+  --line-top: #a8bfd6;
+  --line-middle: #c7d5e3;
+  --line-base: #314f6c;
+  --paper: #fffdf8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+.site-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: start;
+  padding: 2.5rem clamp(1rem, 4vw, 4rem);
+  background: linear-gradient(135deg, #102a43, #27496d 55%, #7a4f24);
+  color: white;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: clamp(2.2rem, 5vw, 5rem);
+  line-height: 0.95;
+  letter-spacing: -0.05em;
+}
+
+.site-subtitle,
+.site-hint {
+  max-width: 68rem;
+  color: #dce9f5;
+  font-size: 1.05rem;
+}
+
+.site-hint {
+  color: #f8e3b5;
+}
+
+.header-actions {
+  display: grid;
+  gap: 0.8rem;
+  min-width: 14rem;
+}
+
+.language-selector {
+  display: grid;
+  gap: 0.35rem;
+  color: #f8e3b5;
+  font-weight: 700;
+}
+
+.language-selector select,
+.print-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.7rem 1rem;
+  background: white;
+  color: #102a43;
+  box-shadow: 0 0.6rem 1.4rem rgb(16 42 67 / 0.22);
+}
+
+.print-button {
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.workbook {
+  display: grid;
+  gap: 1.5rem;
+  width: min(1180px, calc(100% - 2rem));
+  margin: 2rem auto 4rem;
+}
+
+.print-page {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 44rem;
+  padding: 2rem;
+  overflow: hidden;
+  border: 1px solid #d7e2ec;
+  border-radius: 1.3rem;
+  background: var(--paper);
+  box-shadow: 0 1.4rem 3rem rgb(16 42 67 / 0.12);
+}
+
+.page-head h2 {
+  margin: 0 0 1rem;
+  color: var(--ink);
+  font-size: clamp(1.7rem, 3vw, 2.8rem);
+  line-height: 1;
+}
+
+.eyebrow {
+  margin: 0 0 0.45rem;
+  color: #7a4f24;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-body {
+  min-width: 0;
+}
+
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding-top: 0.7rem;
+  border-top: 1px solid #d7e2ec;
+  color: #71879b;
+  font-size: 0.82rem;
+}
+
+.cover-layout {
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  min-height: 28rem;
+  text-align: center;
+}
+
+.cover-model,
+.letter-model,
+.model-text,
+.letter-grid span {
+  font-family: var(--model-font);
+}
+
+.cover-model {
+  color: var(--ink);
+  font-size: clamp(3.5rem, 9vw, 8rem);
+  letter-spacing: 0.08em;
+}
+
+.letter-model {
+  margin-bottom: 1rem;
+  color: var(--ink);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  letter-spacing: 0.16em;
+}
+
+.model-text {
+  color: var(--ink);
+  font-size: 1.35rem;
+  letter-spacing: 0.04em;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.compact-columns {
+  align-items: start;
+}
+
+.info-card,
+.form-card {
+  border: 1px solid #c8d7e5;
+  border-radius: 1rem;
+  padding: 1rem;
+  background: white;
+}
+
+.soft {
+  background: #f4f9fd;
+}
+
+.warning {
+  border-color: #e8ba63;
+  background: #fff8e6;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+th,
+td {
+  border: 1px solid #bdd0df;
+  padding: 0.55rem;
+  vertical-align: top;
+}
+
+th {
+  background: #e8f1fb;
+  color: var(--ink);
+  text-align: left;
+}
+
+.checklist-table td:first-child,
+.checkbox-cell {
+  width: 2.1rem;
+  text-align: center;
+}
+
+.field-block {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.blank-field {
+  min-height: 2.6rem;
+  border: 1px solid #bdd0df;
+  border-radius: 0.45rem;
+  background: white;
+}
+
+.letter-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0.7rem 0 1.2rem;
+}
+
+.letter-grid span {
+  display: grid;
+  place-items: center;
+  width: 3.2rem;
+  height: 3.2rem;
+  border: 1px solid #bdd0df;
+  border-radius: 0.6rem;
+  background: white;
+  font-size: 2rem;
+}
+
+.caligraphy-guide {
+  display: grid;
+  gap: 0.24rem;
+  margin: 0.8rem 0 1rem;
+}
+
+.guide-row {
+  width: 100%;
+  height: 18mm;
+  border-right: 1px solid #d9e2ec;
+  border-left: 1px solid #d9e2ec;
+  background: linear-gradient(
+    90deg,
+    transparent 0 97%,
+    rgb(217 226 236 / 0.45) 97% 100%
+  );
+}
+
+.caligraphy-guide.compact .guide-row {
+  height: 13mm;
+}
+
+.guide-line {
+  vector-effect: non-scaling-stroke;
+  stroke-width: 1.3;
+}
+
+.guide-top {
+  stroke: var(--line-top);
+}
+
+.guide-middle,
+.guide-bottom {
+  stroke: var(--line-middle);
+  stroke-dasharray: 12 10;
+}
+
+.guide-base {
+  stroke: var(--line-base);
+  stroke-width: 1.8;
+}
+
+.guide-trace {
+  fill: rgb(74 98 122 / 0.32);
+  font-family: var(--model-font);
+  font-size: 62px;
+  letter-spacing: 16px;
+  dominant-baseline: alphabetic;
+}
+
+.compact .guide-trace {
+  font-size: 54px;
+  letter-spacing: 12px;
+}
+
+.rating-table th:nth-child(n + 2):nth-child(-n + 5),
+.rating-table td:nth-child(n + 2):nth-child(-n + 5) {
+  width: 2.4rem;
+  text-align: center;
+}
+
+@media (max-width: 760px) {
+  .site-header,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .print-page {
+    padding: 1.1rem;
+  }
+}
+
+@media print {
+  :root {
+    background: white;
+  }
+
+  body {
+    background: white;
+    color: black;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .screen-only {
+    display: none !important;
+  }
+
+  .workbook {
+    display: block;
+    width: auto;
+    margin: 0;
+  }
+
+  .print-page {
+    min-height: 274mm;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    page-break-after: always;
+    break-after: page;
+  }
+
+  .print-page:last-child {
+    page-break-after: auto;
+    break-after: auto;
+  }
+
+  .page-head h2 {
+    font-size: 18pt;
+  }
+
+  .eyebrow {
+    font-size: 8pt;
+  }
+
+  .page-footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 8pt;
+  }
+
+  .page-body {
+    padding-bottom: 12mm;
+  }
+
+  .cover-model {
+    font-size: 54pt;
+  }
+
+  .letter-model {
+    font-size: 28pt;
+  }
+
+  .model-text {
+    font-size: 13pt;
+  }
+
+  .guide-row {
+    height: 15mm;
+  }
+
+  .caligraphy-guide.compact .guide-row {
+    height: 11mm;
+  }
+
+  th,
+  td {
+    padding: 1.6mm;
+    font-size: 9pt;
+  }
+
+  .info-card,
+  .form-card {
+    padding: 3mm;
+    border-radius: 2mm;
+  }
+}

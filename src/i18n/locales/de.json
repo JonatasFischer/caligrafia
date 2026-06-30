@@ -1,0 +1,251 @@
+{
+  "app": {
+    "title": "A4-Schreibheft",
+    "subtitle": "Intensives Training für Druckschrift, Geduld und Konzentration mit Website-Layout am Bildschirm und A4-Layout nur beim Drucken.",
+    "screenHint": "Am Bildschirm funktioniert dieses Dokument wie eine Website. Beim Drucken wechselt das CSS zu A4-Blättern mit eigenen Rändern, Umbrüchen und Abständen.",
+    "print": "Drucken / als PDF speichern",
+    "language": "Sprache"
+  },
+  "common": {
+    "page": "Seite",
+    "student": "Kind",
+    "period": "Zeitraum",
+    "date": "Datum",
+    "timer": "Timer",
+    "breaks": "Pausen",
+    "words": "Wörter",
+    "sentences": "Sätze",
+    "goal": "Ziel",
+    "observation": "Beobachtung",
+    "score": "Punktzahl"
+  },
+  "sections": {
+    "coverKicker": "Druckbares A4-Heft",
+    "coverTitle": "Training für Druckschrift, Geduld und Konzentration",
+    "objective": "Lesbar schreiben, nicht hetzen und vor der Abgabe kontrollieren.",
+    "parentGuide": "Kurzanleitung für Eltern",
+    "howToUse": "So wird das Heft benutzt",
+    "coreRule": "Grundregel",
+    "coreRuleText": "Das Kind ist nicht fertig, weil die Seite voll ist. Es arbeitet bis der Timer endet und das Mindestkriterium erreicht ist.",
+    "coreSentence": "Das Ziel ist nicht, schnell fertig zu sein. Das Ziel ist lesbar zu schreiben, bis der Timer klingelt.",
+    "blockSequence": "Ablauf eines Blocks",
+    "painWarning": "Schmerzen beenden das Schreiben",
+    "painWarningText": "Bei Schmerzen, Taubheit, starkem Zittern, echtem Weinen oder starker Müdigkeit wird das Schreiben beendet und durch Lesen, mündliches Diktat oder Pause ersetzt.",
+    "goodReinforcement": "Hilfreiche Verstärkung",
+    "avoid": "Vermeiden",
+    "dailyRoutine": "Tagesroutine",
+    "dailyRoutineText": "Sechs strukturierte Stunden, aber nicht sechs Stunden Abschreiben. Die direkte Handschrift wird in kurze Blöcke mit echten Pausen geteilt.",
+    "checklistBeforeBlock": "Checkliste vor jedem Block",
+    "diagnosis": "Diagnoseblatt",
+    "diagnosisKicker": "Nicht zu stark korrigieren: Das ist die Vorher-Probe",
+    "alphabet": "Buchstabenmodell",
+    "alphabetKicker": "Vereinfachte Druckschrift / Grundschrift",
+    "guidedPractice": "Geführtes Üben",
+    "modelAndRepetition": "Modell und langsame Wiederholung",
+    "dailyWords": "Wörter des Tages",
+    "dailySentence": "Satz des Tages",
+    "weeklyGoal": "Wochenziel",
+    "blankDailySheet": "Leeres Tagesblatt",
+    "monotonySheet": "Blatt für monotone Wiederholung",
+    "deliveryChecklist": "Checkliste vor der Abgabe",
+    "weeklyRubric": "Wochenrubrik",
+    "copyFromFar": "Abschreiben aus der Entfernung",
+    "dictation": "Diktat und Selbstkorrektur",
+    "mathWriting": "Mathematik mit geordneter Schrift",
+    "portfolio": "Abschlussportfolio",
+    "schoolMessage": "Nachricht an die Schule",
+    "maintenance": "Erhaltungsplan"
+  },
+  "notes": {
+    "cover": "Diese Titelseite für das Vorher-Nachher-Portfolio verwenden.",
+    "parent": "Der Erwachsene handelt als Trainer: Routine, kurzes Feedback und sichtbare Kriterien.",
+    "quality": "Qualität kommt vor Geschwindigkeit. Wenn die Schrift schlechter wird, wird wieder langsamer geschrieben.",
+    "review": "Die Aufgabe endet nach Schreiben, Prüfen und Korrigieren.",
+    "monotony": "Der monotone Teil ist absichtlich: Er trainiert, auch bei Langeweile mit Qualität weiterzumachen."
+  },
+  "lists": {
+    "blockSequence": [
+      "Haltung, Stift und Papier vorbereiten.",
+      "Ziel, Zeit und Kriterium erklären.",
+      "Langsam schreiben.",
+      "Mit Checkliste prüfen.",
+      "Die kleinste nötige Einheit neu schreiben."
+    ],
+    "goodReinforcement": [
+      "Du hast dein Tempo besser kontrolliert.",
+      "Diese Zeile ist lesbarer.",
+      "Du hast es neu geschrieben, ohne aufzugeben.",
+      "Hier war weniger Hetze."
+    ],
+    "avoid": [
+      "Seiten ohne Kriterien füllen.",
+      "Neuschreiben zur Strafe machen.",
+      "Nur schnelles Fertigwerden belohnen.",
+      "Das Kind mit anderen vergleichen."
+    ],
+    "beforeBlock": [
+      "Füße stehen fest",
+      "Schultern locker unten",
+      "Handgelenk entspannt",
+      "Die freie Hand hält das Blatt",
+      "Papier leicht schräg",
+      "Stift ohne zu viel Druck",
+      "Kopf nicht direkt auf dem Papier"
+    ],
+    "deliveryPt": [
+      "Sind meine Buchstaben klar?",
+      "Haben meine Wörter genug Abstand?",
+      "Beginnt der Satz mit einem Großbuchstaben?",
+      "Endet der Satz mit einem Punkt?",
+      "Habe ich kontrolliert, bevor ich fertig gesagt habe?",
+      "War ich zu schnell oder kontrolliert?"
+    ],
+    "deliveryDe": [
+      "Sind meine Buchstaben klar?",
+      "Haben meine Wörter genug Abstand?",
+      "Beginnt der Satz mit einem Großbuchstaben?",
+      "Endet der Satz mit einem Punkt?",
+      "Habe ich kontrolliert, bevor ich fertig gesagt habe?",
+      "War ich zu schnell oder kontrolliert?"
+    ]
+  },
+  "routine": {
+    "headers": ["Uhrzeit", "Block", "Aktivität", "Anstrengung"],
+    "rows": [
+      [
+        "08:30-08:45",
+        "Vorbereitung",
+        "Haltung, Ziel, Atmung und Aufwärmen",
+        "Regulation"
+      ],
+      [
+        "08:45-09:30",
+        "Präzision",
+        "Buchstabe oder Buchstabenfamilie",
+        "direktes Schreiben"
+      ],
+      ["09:30-09:45", "Pause", "Wasser, Bewegung, kein Bildschirm", "Erholung"],
+      [
+        "09:45-10:30",
+        "Monotonie",
+        "langsame Wiederholung mit Timer",
+        "Geduld + Schreiben"
+      ],
+      [
+        "10:45-11:30",
+        "Wörter",
+        "deutsche Wörter mit Zielbuchstaben",
+        "direktes Schreiben"
+      ],
+      [
+        "11:45-12:15",
+        "Kontrolle",
+        "mit Modell vergleichen und beste Buchstaben markieren",
+        "visuelle Aufmerksamkeit"
+      ],
+      [
+        "13:15-14:00",
+        "Abschreiben",
+        "vom Blatt und von der Wand abschreiben",
+        "Transfer"
+      ],
+      [
+        "14:15-15:00",
+        "Sätze",
+        "schulnahe deutsche Sätze",
+        "direktes Schreiben"
+      ],
+      [
+        "15:15-16:00",
+        "Diktat",
+        "hören, schreiben, prüfen, neu schreiben",
+        "Selbstkorrektur"
+      ],
+      ["16:15-17:00", "Simulation", "kleine echte Aufgabe + Rubrik", "Ausdauer"]
+    ]
+  },
+  "practiceGroups": {
+    "round": {
+      "name": "Runde Buchstaben",
+      "focus": "a schließen, a/o trennen und d/q sowie g/q unterscheiden."
+    },
+    "vertical": {
+      "name": "Senkrechte Buchstaben",
+      "focus": "Gerade Linien, sichtbare Punkte und j unter der Linie."
+    },
+    "bridges": {
+      "name": "Brückenbuchstaben",
+      "focus": "Gleichmäßige Bögen; n wird nicht zu u; m hat drei Teile."
+    },
+    "curves": {
+      "name": "Kleine Kurven",
+      "focus": "Offenes e, lesbares s und z mit klaren Diagonalen."
+    },
+    "diagonals": {
+      "name": "Hasten und Diagonalen",
+      "focus": "b geht nach oben, p nach unten, v ist nicht u und w ist nicht m."
+    },
+    "uppercaseStraight": {
+      "name": "Gerade Großbuchstaben",
+      "focus": "Gleichmäßige Höhe und gerade Linien."
+    },
+    "uppercaseRound": {
+      "name": "Runde Großbuchstaben",
+      "focus": "Geschlossenes O, offenes C, markiertes G und D wird nicht zu O."
+    },
+    "numbersGerman": {
+      "name": "Zahlen und deutsche Zeichen",
+      "focus": "Klare Zahlen, sichtbare Umlaute und erkennbares ß."
+    }
+  },
+  "weeks": {
+    "week1": {
+      "title": "Kontrolle, Linie, Druck und Routine",
+      "goal": "Haltung, Tempokontrolle, Stiftdruck und Akzeptanz des Timers aufbauen.",
+      "metric": "5-8 Minuten Wiederholung ohne Hetzen schaffen und einen Vorher-Nachher-Vergleich erstellen."
+    },
+    "week2": {
+      "title": "Kleinbuchstaben nach Bewegungsfamilien",
+      "goal": "Kleinbuchstaben nach Bewegungsgruppen trainieren.",
+      "metric": "Lesbareres Kleinbuchstabenalphabet und weniger verwechselbare Paare."
+    },
+    "week3": {
+      "title": "Großbuchstaben, Zahlen und deutsche Zeichen",
+      "goal": "Das schulische Schreibrepertoire vervollständigen.",
+      "metric": "Vollständiges Alphabet, klare Zahlen und sichtbare Umlaute."
+    },
+    "week4": {
+      "title": "Häufige deutsche Wörter und Geduld",
+      "goal": "Geübte Buchstaben in funktionale Wörter übertragen.",
+      "metric": "Lesbare Listen mit 18-20 Minuten monotonem Üben."
+    },
+    "week5": {
+      "title": "Schulsätze, Diktat und Kontrolle",
+      "goal": "Die Schrift in echten Sätzen verwenden.",
+      "metric": "Lesbare Schulsätze mit verpflichtender Kontrolle."
+    },
+    "week6": {
+      "title": "Ausdauer, kontrolliertes Tempo und Transfer",
+      "goal": "Auch müde oder gelangweilt gut schreiben.",
+      "metric": "Vorher-Nachher-Portfolio und kontrolliertes Tempo ohne Verlust der Lesbarkeit."
+    }
+  },
+  "days": {
+    "day1": "Tag 1",
+    "day2": "Tag 2",
+    "day3": "Tag 3",
+    "day4": "Tag 4",
+    "day5": "Tag 5",
+    "day6": "Tag 6"
+  },
+  "rating": {
+    "form": "Form",
+    "line": "Linie",
+    "size": "Größe",
+    "spacing": "Abstand",
+    "pressure": "Druck",
+    "speed": "Tempo",
+    "review": "Kontrolle",
+    "patience": "Geduld"
+  }
+}

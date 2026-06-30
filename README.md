@@ -1,30 +1,37 @@
-# Caligrafia HTML A4
+# Caligrafia React A4
 
-Material didatico imprimivel em A4 para treino intensivo de letra de forma, paciencia e concentracao.
+Aplicativo React + TypeScript para gerar um caderno de caligrafia escolar com duas experiências:
 
-O projeto e propositalmente simples: um arquivo HTML/CSS completo que pode ser aberto diretamente no navegador.
+- site responsivo para leitura, navegação e escolha de idioma;
+- layout A4 somente no modo de impressão, usando `@media print` e `@page`.
 
-- `index.html`: caderno completo com 66 paginas A4.
-- `plano_treino_caligrafia_letra_de_forma.md`: plano pedagogico de origem e referencia longa.
+## Tecnologias
 
-## Por que HTML/CSS
+- React
+- TypeScript
+- Vite
+- i18next + react-i18next
+- HTML/CSS de impressão A4
 
-O material didatico e desenhado em HTML/CSS porque o objetivo principal e controlar paginas A4, quebras de pagina, margens, tabelas, fichas, linhas de escrita, modelos de letras, rubricas e folhas repetiveis.
+## Como rodar
 
-O PDF nao e uma barreira tecnica: abra o HTML no navegador e use `Imprimir` -> `Salvar como PDF` quando precisar de um arquivo PDF. Isso preserva o fluxo de revisao visual e permite ajustar escala, margens e fonte antes de imprimir.
+```bash
+npm install
+npm run dev
+```
 
-## Como imprimir
+## Como gerar PDF ou imprimir
 
-1. Abra `index.html` no navegador.
-2. Use `Imprimir`.
-3. Escolha papel `A4`.
-4. Desative cabecalhos e rodapes do navegador.
-5. Use escala `100%` ou `Ajustar a area imprimivel` se a impressora cortar margens.
-6. Escolha a impressora fisica ou `Salvar como PDF`.
+1. Abra a aplicação no navegador.
+2. Escolha o idioma no seletor: português, inglês ou alemão.
+3. Use o botão `Imprimir / salvar PDF` ou o atalho de impressão do navegador.
+4. Escolha papel `A4`.
+5. Desative cabeçalhos e rodapés do navegador.
+6. Use escala `100%` ou `Ajustar à área imprimível` se a impressora cortar margens.
 
-## Fontes e modelos de caligrafia
+## Fontes de caligrafia
 
-O HTML carrega Grundschrift pelo FontLibrary:
+O `index.html` carrega Grundschrift pelo FontLibrary para tela e impressão:
 
 ```html
 <link
@@ -33,34 +40,33 @@ O HTML carrega Grundschrift pelo FontLibrary:
   href="https://fontlibrary.org//face/grundschrift"
   type="text/css"
 />
+<link
+  rel="stylesheet"
+  media="print"
+  href="https://fontlibrary.org//face/grundschrift"
+  type="text/css"
+/>
 ```
 
-Tambem ha uma segunda chamada para `media="print"`, para aumentar a chance de o navegador manter a fonte durante a impressao.
-
-As linhas-modelo usam este stack de fontes:
+As linhas de treino usam este stack:
 
 ```css
-"GrundschriftRegular", "GrundschriftNormal", "Grundschrift", "Andika", "Comic Sans MS", "Arial Rounded MT Bold", "Helvetica", sans-serif
+"GrundschriftRegular", "GrundschriftNormal", "Grundschrift", "Andika", "Comic Sans MS", "Arial Rounded MT Bold", sans-serif
 ```
 
-Se `Andika`, `Grundschrift` ou outra fonte escolar estiver instalada no sistema, o navegador pode usa-la diretamente na impressao.
+## Alinhamento das linhas
 
-Mesmo sem uma fonte escolar especial, o material continua funcional porque os exercicios usam letras grandes, espacamento amplo, linhas-guia e foco em legibilidade, nao em ornamentacao.
+Os blocos de caligrafia usam SVG. A linha de base é uma linha real do SVG e o texto-modelo é renderizado com `y` na mesma baseline. Isso evita o desalinhamento que ocorria quando o texto era posicionado por `top`/`line-height` em HTML comum.
 
-## Material incluido
+## Estrutura
 
-- Capa e guia para os pais.
-- Rotina diaria de seis horas com pausas.
-- Folha de diagnostico inicial.
-- Alfabeto-modelo em minusculas, maiusculas, numeros e caracteres alemaes.
-- Fichas por familia motora de letras.
-- Paginas diarias para seis semanas de treino.
-- Fichas de repeticao monotona.
-- Checklist bilingue portugues/alemao.
-- Rubrica semanal de legibilidade e paciencia.
-- Copia de longe, ditado, frases escolares e matematica curta.
-- Portfolio final, mensagem para escola e plano de manutencao.
+- `src/i18n/`: configuração i18next e arquivos `pt`, `en`, `de`.
+- `src/data/workbook.ts`: dados das semanas, palavras, frases e grupos de letras.
+- `src/components/CaligraphyGuide.tsx`: linhas de escrita e texto-modelo alinhado.
+- `src/components/WorkbookPage.tsx`: página imprimível.
+- `src/components/PracticeBlock.tsx`: bloco de treino de letras/palavras/frases.
+- `src/components/Workbook.tsx`: composição do documento completo.
 
-## Edicao
+## Plano de origem
 
-Todo o layout esta em `index.html`. Para ajustar linhas, margens, fontes ou paginas, edite o CSS dentro da tag `<style>` e reabra o arquivo no navegador.
+O arquivo `plano_treino_caligrafia_letra_de_forma.md` mantém o plano pedagógico longo usado como referência para o material.

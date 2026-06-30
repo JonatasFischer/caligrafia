@@ -1,0 +1,246 @@
+{
+  "app": {
+    "title": "A4 Handwriting Workbook",
+    "subtitle": "Intensive print-writing, patience, and concentration training with a website layout on screen and A4 layout only when printing.",
+    "screenHint": "On screen, this document behaves like a website. When printing, CSS switches to A4 sheets with dedicated margins, breaks, and spacing.",
+    "print": "Print / save PDF",
+    "language": "Language"
+  },
+  "common": {
+    "page": "Page",
+    "student": "Student",
+    "period": "Period",
+    "date": "Date",
+    "timer": "Timer",
+    "breaks": "Breaks",
+    "words": "Words",
+    "sentences": "Sentences",
+    "goal": "Goal",
+    "observation": "Observation",
+    "score": "Score"
+  },
+  "sections": {
+    "coverKicker": "Printable A4 workbook",
+    "coverTitle": "Print-writing, patience, and concentration training",
+    "objective": "Write legibly, without rushing, and review before handing in.",
+    "parentGuide": "Quick guide for parents",
+    "howToUse": "How to use the workbook",
+    "coreRule": "Core rule",
+    "coreRuleText": "The student does not finish because the page is full. Work continues until the timer ends and the minimum quality criterion is met.",
+    "coreSentence": "The goal is not to finish. The goal is to keep quality until the timer rings.",
+    "blockSequence": "Block sequence",
+    "painWarning": "Pain ends handwriting work",
+    "painWarningText": "If there is pain, numbness, excessive trembling, real crying, or intense fatigue, stop handwriting and switch to reading, oral dictation, or a break.",
+    "goodReinforcement": "Helpful reinforcement",
+    "avoid": "Avoid",
+    "dailyRoutine": "Daily routine",
+    "dailyRoutineText": "Six structured hours, but not six hours of copying. Direct handwriting is split into short blocks with real breaks.",
+    "checklistBeforeBlock": "Checklist before each block",
+    "diagnosis": "Diagnosis sheet",
+    "diagnosisKicker": "Keep it without over-correcting: this is the before sample",
+    "alphabet": "Letter model",
+    "alphabetKicker": "Simplified Druckschrift / Grundschrift",
+    "guidedPractice": "Guided practice",
+    "modelAndRepetition": "Model and slow repetition",
+    "dailyWords": "Daily words",
+    "dailySentence": "Daily sentence",
+    "weeklyGoal": "Weekly goal",
+    "blankDailySheet": "Blank daily sheet",
+    "monotonySheet": "Monotony repetition sheet",
+    "deliveryChecklist": "Checklist before handing in",
+    "weeklyRubric": "Weekly rubric",
+    "copyFromFar": "Copying from a distance",
+    "dictation": "Dictation and self-correction",
+    "mathWriting": "Math with organized writing",
+    "portfolio": "Final portfolio",
+    "schoolMessage": "Message to school",
+    "maintenance": "Maintenance plan"
+  },
+  "notes": {
+    "cover": "Use this cover to assemble the before/after portfolio.",
+    "parent": "The adult acts as a coach: routine, short feedback, and visual criteria.",
+    "quality": "Quality increases before speed. If handwriting gets worse, speed goes back down.",
+    "review": "The task ends after writing, reviewing, and correcting.",
+    "monotony": "The monotonous part is intentional: it trains continuing with quality even when it is boring."
+  },
+  "lists": {
+    "blockSequence": [
+      "Prepare posture, pencil, and paper.",
+      "Explain goal, time, and criterion.",
+      "Write slowly.",
+      "Review with the checklist.",
+      "Redo the smallest necessary unit."
+    ],
+    "goodReinforcement": [
+      "You controlled your pace better.",
+      "This line is more legible.",
+      "You redid it without giving up.",
+      "The rushing decreased here."
+    ],
+    "avoid": [
+      "Filling pages without criteria.",
+      "Turning redoing into punishment.",
+      "Rewarding only finishing fast.",
+      "Comparing the child with others."
+    ],
+    "beforeBlock": [
+      "Feet supported",
+      "Shoulders down",
+      "Wrist relaxed",
+      "Non-writing hand holds the page",
+      "Paper tilted",
+      "Pencil without excessive pressure",
+      "Head not glued to the paper"
+    ],
+    "deliveryPt": [
+      "Are my letters clear?",
+      "Do my words have enough space?",
+      "Does the sentence start with a capital letter?",
+      "Does the sentence end with a period?",
+      "Did I review before saying I was done?",
+      "Did I rush or stay controlled?"
+    ],
+    "deliveryDe": [
+      "Sind meine Buchstaben klar?",
+      "Haben meine Wörter genug Abstand?",
+      "Beginnt der Satz mit einem Großbuchstaben?",
+      "Endet der Satz mit einem Punkt?",
+      "Habe ich kontrolliert, bevor ich fertig gesagt habe?",
+      "War ich zu schnell oder kontrolliert?"
+    ]
+  },
+  "routine": {
+    "headers": ["Time", "Block", "Activity", "Effort"],
+    "rows": [
+      [
+        "08:30-08:45",
+        "Preparation",
+        "posture, goal, breathing, and warm-up",
+        "regulation"
+      ],
+      [
+        "08:45-09:30",
+        "Precision",
+        "letter or letter family",
+        "direct handwriting"
+      ],
+      ["09:30-09:45", "Break", "water, movement, no screen", "recovery"],
+      [
+        "09:45-10:30",
+        "Monotony",
+        "slow repetition with timer",
+        "patience + writing"
+      ],
+      [
+        "10:45-11:30",
+        "Words",
+        "German words with target letters",
+        "direct handwriting"
+      ],
+      [
+        "11:45-12:15",
+        "Review",
+        "compare with model and mark best letters",
+        "visual attention"
+      ],
+      ["13:15-14:00", "Copy", "copy from paper and wall", "transfer"],
+      [
+        "14:15-15:00",
+        "Sentences",
+        "school-like German sentences",
+        "direct handwriting"
+      ],
+      [
+        "15:15-16:00",
+        "Dictation",
+        "listen, write, review, rewrite",
+        "self-correction"
+      ],
+      ["16:15-17:00", "Simulation", "small real task + rubric", "endurance"]
+    ]
+  },
+  "practiceGroups": {
+    "round": {
+      "name": "Round letters",
+      "focus": "Close a, separate a/o, and distinguish d/q and g/q."
+    },
+    "vertical": {
+      "name": "Vertical letters",
+      "focus": "Straight lines, visible dots, and j below the line."
+    },
+    "bridges": {
+      "name": "Bridge letters",
+      "focus": "Consistent arches; n does not become u; m has three parts."
+    },
+    "curves": {
+      "name": "Small curves",
+      "focus": "Open e, legible s, and z with clear diagonals."
+    },
+    "diagonals": {
+      "name": "Stems and diagonals",
+      "focus": "b goes up, p goes down, v is not u, and w is not m."
+    },
+    "uppercaseStraight": {
+      "name": "Straight capitals",
+      "focus": "Consistent height and straight lines."
+    },
+    "uppercaseRound": {
+      "name": "Round capitals",
+      "focus": "Closed O, open C, marked G, and D not turning into O."
+    },
+    "numbersGerman": {
+      "name": "Numbers and German characters",
+      "focus": "Clear numbers, visible umlauts, and recognizable ß."
+    }
+  },
+  "weeks": {
+    "week1": {
+      "title": "control, line, pressure, and routine",
+      "goal": "Build posture, speed control, pencil pressure, and timer acceptance.",
+      "metric": "Complete 5-8 min repetitions without rushing and produce a before/after comparison."
+    },
+    "week2": {
+      "title": "lowercase by motor families",
+      "goal": "Practice lowercase letters by movement groups.",
+      "metric": "More legible lowercase alphabet and fewer confusing pairs."
+    },
+    "week3": {
+      "title": "capitals, numbers, and German characters",
+      "goal": "Complete the school-writing repertoire.",
+      "metric": "Complete alphabet, clear numbers, and visible umlauts."
+    },
+    "week4": {
+      "title": "frequent German words and patience",
+      "goal": "Turn trained letters into functional words.",
+      "metric": "Legible lists with 18-20 min monotony blocks."
+    },
+    "week5": {
+      "title": "school sentences, dictation, and review",
+      "goal": "Use handwriting in real sentences.",
+      "metric": "Legible school sentences with mandatory review."
+    },
+    "week6": {
+      "title": "endurance, controlled speed, and transfer",
+      "goal": "Write well even when tired or bored.",
+      "metric": "Before/after portfolio and controlled speed without destroying legibility."
+    }
+  },
+  "days": {
+    "day1": "Day 1",
+    "day2": "Day 2",
+    "day3": "Day 3",
+    "day4": "Day 4",
+    "day5": "Day 5",
+    "day6": "Day 6"
+  },
+  "rating": {
+    "form": "form",
+    "line": "line",
+    "size": "size",
+    "spacing": "spacing",
+    "pressure": "pressure",
+    "speed": "speed",
+    "review": "review",
+    "patience": "patience"
+  }
+}

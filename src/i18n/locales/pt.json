@@ -1,0 +1,246 @@
+{
+  "app": {
+    "title": "Caderno de Caligrafia A4",
+    "subtitle": "Treino intensivo de letra de forma, paciência e concentração, com versão de site na tela e layout A4 somente na impressão.",
+    "screenHint": "Na tela, este documento funciona como site. Ao imprimir, o CSS muda para folhas A4 com margens, quebras e espaçamentos próprios.",
+    "print": "Imprimir / salvar PDF",
+    "language": "Idioma"
+  },
+  "common": {
+    "page": "Página",
+    "student": "Aluno",
+    "period": "Período",
+    "date": "Data",
+    "timer": "Timer",
+    "breaks": "Pausas",
+    "words": "Palavras",
+    "sentences": "Frases",
+    "goal": "Meta",
+    "observation": "Observação",
+    "score": "Nota"
+  },
+  "sections": {
+    "coverKicker": "Caderno imprimível A4",
+    "coverTitle": "Treino de letra de forma, paciência e concentração",
+    "objective": "Escrever de forma legível, sem correr, revisando antes de entregar.",
+    "parentGuide": "Guia rápido para os pais",
+    "howToUse": "Como usar o caderno",
+    "coreRule": "Regra central",
+    "coreRuleText": "O aluno não termina porque preencheu a folha. Ele trabalha até o timer acabar e até a qualidade mínima ser atingida.",
+    "coreSentence": "O objetivo não é acabar. O objetivo é manter qualidade até o timer tocar.",
+    "blockSequence": "Sequência do bloco",
+    "painWarning": "Dor encerra escrita manual",
+    "painWarningText": "Se houver dor, dormência, tremor excessivo, choro real ou fadiga intensa, parar a escrita manual e trocar por leitura, ditado oral ou pausa.",
+    "goodReinforcement": "Reforço correto",
+    "avoid": "Evitar",
+    "dailyRoutine": "Rotina diária",
+    "dailyRoutineText": "Seis horas estruturadas, mas não seis horas copiando. A escrita direta é dividida em blocos curtos com pausas reais.",
+    "checklistBeforeBlock": "Checklist antes de cada bloco",
+    "diagnosis": "Folha de diagnóstico",
+    "diagnosisKicker": "Guardar sem corrigir demais: esta é a amostra antes",
+    "alphabet": "Alfabeto modelo",
+    "alphabetKicker": "Druckschrift / Grundschrift simplificada",
+    "guidedPractice": "Treino guiado",
+    "modelAndRepetition": "Modelo e repetição lenta",
+    "dailyWords": "Palavras do dia",
+    "dailySentence": "Frase do dia",
+    "weeklyGoal": "Meta da semana",
+    "blankDailySheet": "Ficha diária em branco",
+    "monotonySheet": "Folha de repetição monótona",
+    "deliveryChecklist": "Checklist antes de entregar",
+    "weeklyRubric": "Rubrica semanal",
+    "copyFromFar": "Cópia de longe",
+    "dictation": "Ditado e autocorreção",
+    "mathWriting": "Matemática com escrita organizada",
+    "portfolio": "Portfólio final",
+    "schoolMessage": "Mensagem para a escola",
+    "maintenance": "Plano de manutenção"
+  },
+  "notes": {
+    "cover": "Use esta capa para montar o portfólio antes/depois.",
+    "parent": "O adulto atua como treinador: rotina, feedback curto e critério visual.",
+    "quality": "A qualidade sobe antes da velocidade. Se a letra piora, a velocidade volta a diminuir.",
+    "review": "A tarefa termina depois de escrever, revisar e corrigir.",
+    "monotony": "A parte monótona é intencional: treina continuar com qualidade mesmo quando é chato."
+  },
+  "lists": {
+    "blockSequence": [
+      "Preparar postura, lápis e papel.",
+      "Explicar meta, tempo e critério.",
+      "Escrever devagar.",
+      "Revisar com checklist.",
+      "Refazer a menor unidade necessária."
+    ],
+    "goodReinforcement": [
+      "Você controlou melhor o ritmo.",
+      "Essa linha está mais legível.",
+      "Você refez sem desistir.",
+      "A pressa diminuiu aqui."
+    ],
+    "avoid": [
+      "Encher páginas sem critério.",
+      "Transformar refazer em castigo.",
+      "Premiar apenas terminar rápido.",
+      "Comparar a criança com outras."
+    ],
+    "beforeBlock": [
+      "Pés apoiados",
+      "Ombros baixos",
+      "Punho relaxado",
+      "A mão que não escreve segura a folha",
+      "Papel inclinado",
+      "Lápis sem pressão excessiva",
+      "Cabeça não colada no papel"
+    ],
+    "deliveryPt": [
+      "Minhas letras estão claras?",
+      "Minhas palavras têm espaço?",
+      "A frase começa com maiúscula?",
+      "A frase termina com ponto?",
+      "Eu revisei antes de dizer que terminei?",
+      "Eu corri ou mantive controle?"
+    ],
+    "deliveryDe": [
+      "Sind meine Buchstaben klar?",
+      "Haben meine Wörter genug Abstand?",
+      "Beginnt der Satz mit einem Großbuchstaben?",
+      "Endet der Satz mit einem Punkt?",
+      "Habe ich kontrolliert, bevor ich fertig gesagt habe?",
+      "War ich zu schnell oder kontrolliert?"
+    ]
+  },
+  "routine": {
+    "headers": ["Horário", "Bloco", "Atividade", "Esforço"],
+    "rows": [
+      [
+        "08:30-08:45",
+        "Preparação",
+        "postura, meta, respiração e aquecimento",
+        "regulação"
+      ],
+      [
+        "08:45-09:30",
+        "Precisão",
+        "letra ou família de letras",
+        "escrita direta"
+      ],
+      ["09:30-09:45", "Pausa", "água, movimento, sem tela", "recuperação"],
+      [
+        "09:45-10:30",
+        "Monotonia",
+        "repetição lenta com timer",
+        "paciência + escrita"
+      ],
+      [
+        "10:45-11:30",
+        "Palavras",
+        "palavras alemãs com letras-alvo",
+        "escrita direta"
+      ],
+      [
+        "11:45-12:15",
+        "Revisão",
+        "comparar com modelo e marcar melhores letras",
+        "atenção visual"
+      ],
+      ["13:15-14:00", "Cópia", "copiar de folha e de parede", "transferência"],
+      ["14:15-15:00", "Frases", "frases alemãs escolares", "escrita direta"],
+      [
+        "15:15-16:00",
+        "Ditado",
+        "ouvir, escrever, revisar e reescrever",
+        "autocorreção"
+      ],
+      [
+        "16:15-17:00",
+        "Simulação",
+        "pequena tarefa real + rubrica",
+        "resistência"
+      ]
+    ]
+  },
+  "practiceGroups": {
+    "round": {
+      "name": "Redondas",
+      "focus": "Fechar o a, separar a/o, diferenciar d/q e g/q."
+    },
+    "vertical": {
+      "name": "Verticais",
+      "focus": "Linhas retas, pontos visíveis e j abaixo da linha."
+    },
+    "bridges": {
+      "name": "Pontes",
+      "focus": "Arcos consistentes; n não vira u; m tem três partes."
+    },
+    "curves": {
+      "name": "Pequenas curvas",
+      "focus": "e aberto, s legível e z com diagonais claras."
+    },
+    "diagonals": {
+      "name": "Hastes e diagonais",
+      "focus": "b sobe, p desce, v não vira u e w não vira m."
+    },
+    "uppercaseStraight": {
+      "name": "Maiúsculas retas",
+      "focus": "Altura consistente e linhas retas."
+    },
+    "uppercaseRound": {
+      "name": "Maiúsculas redondas",
+      "focus": "O fechado, C aberto, G com marca e D sem virar O."
+    },
+    "numbersGerman": {
+      "name": "Números e caracteres alemães",
+      "focus": "Números claros, umlauts visíveis e ß reconhecível."
+    }
+  },
+  "weeks": {
+    "week1": {
+      "title": "controle, linha, pressão e rotina",
+      "goal": "Construir postura, controle da pressa, pressão e aceitação do timer.",
+      "metric": "Completar repetições de 5-8 min sem correr e produzir comparação antes/depois."
+    },
+    "week2": {
+      "title": "minúsculas por famílias motoras",
+      "goal": "Treinar minúsculas por grupos de movimento.",
+      "metric": "Alfabeto minúsculo mais legível e pares confundíveis reduzidos."
+    },
+    "week3": {
+      "title": "maiúsculas, números e caracteres alemães",
+      "goal": "Completar repertório de escrita escolar.",
+      "metric": "Alfabeto completo, números claros e umlauts visíveis."
+    },
+    "week4": {
+      "title": "palavras alemãs frequentes e paciência",
+      "goal": "Transformar letras em palavras funcionais.",
+      "metric": "Listas legíveis com monotonia de 18-20 min."
+    },
+    "week5": {
+      "title": "frases escolares, ditado e revisão",
+      "goal": "Usar a letra em frases reais.",
+      "metric": "Frases escolares legíveis com revisão obrigatória."
+    },
+    "week6": {
+      "title": "resistência, velocidade controlada e transferência",
+      "goal": "Escrever bem mesmo cansado ou entediado.",
+      "metric": "Portfólio antes/depois e velocidade controlada sem destruir legibilidade."
+    }
+  },
+  "days": {
+    "day1": "Dia 1",
+    "day2": "Dia 2",
+    "day3": "Dia 3",
+    "day4": "Dia 4",
+    "day5": "Dia 5",
+    "day6": "Dia 6"
+  },
+  "rating": {
+    "form": "forma",
+    "line": "linha",
+    "size": "tamanho",
+    "spacing": "espaço",
+    "pressure": "pressão",
+    "speed": "velocidade",
+    "review": "revisão",
+    "patience": "paciência"
+  }
+}
