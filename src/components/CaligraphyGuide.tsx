@@ -29,15 +29,15 @@ export function CaligraphyGuide({
               className="guide-line guide-top"
               x1="0"
               x2="1000"
-              y1="24"
-              y2="24"
+              y1="28"
+              y2="28"
             />
             <line
               className="guide-line guide-middle"
               x1="0"
               x2="1000"
-              y1="68"
-              y2="68"
+              y1="64"
+              y2="64"
             />
             <line
               className="guide-line guide-base"
