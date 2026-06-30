@@ -351,14 +351,15 @@ th {
 
 @media print {
   :root {
-    background: white;
+    background: transparent;
   }
 
+  html,
   body {
-    background: white;
+    background: transparent;
     color: black;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
+    -webkit-print-color-adjust: economy;
+    print-color-adjust: economy;
   }
 
   .screen-only {
@@ -374,12 +375,13 @@ th {
   .print-page {
     display: flex;
     flex-direction: column;
-    height: 270mm;
+    height: 260mm;
     min-height: 0;
     overflow: hidden;
     padding: 0;
     border: 0;
     border-radius: 0;
+    background: transparent;
     box-shadow: none;
     page-break-inside: avoid;
     page-break-after: always;
@@ -407,7 +409,18 @@ th {
   }
 
   .page-body {
-    padding-bottom: 4mm;
+    padding-bottom: 2mm;
+  }
+
+  th,
+  .soft,
+  .warning,
+  .info-card,
+  .form-card,
+  .blank-field,
+  .letter-grid span,
+  .guide-row {
+    background: transparent !important;
   }
 
   .cover-model {
