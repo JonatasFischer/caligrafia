@@ -269,8 +269,10 @@ th {
 }
 
 .guide-row {
+  position: relative;
   width: 100%;
   height: 18mm;
+  overflow: hidden;
   border-right: 1px solid #d9e2ec;
   border-left: 1px solid #d9e2ec;
   background: linear-gradient(
@@ -282,6 +284,14 @@ th {
 
 .caligraphy-guide.compact .guide-row {
   height: 13mm;
+}
+
+.guide-lines {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .guide-line {
@@ -305,16 +315,21 @@ th {
 }
 
 .guide-trace {
-  fill: rgb(74 98 122 / 0.32);
+  position: absolute;
+  top: 67.5%;
+  left: 8mm;
+  transform: translateY(-0.82em);
+  color: rgb(74 98 122 / 0.36);
   font-family: var(--model-font);
-  font-size: 62px;
-  letter-spacing: 16px;
-  dominant-baseline: alphabetic;
+  font-size: 10.4mm;
+  line-height: 1;
+  white-space: nowrap;
+  letter-spacing: 0.16em;
 }
 
 .compact .guide-trace {
-  font-size: 54px;
-  letter-spacing: 12px;
+  font-size: 7.7mm;
+  letter-spacing: 0.12em;
 }
 
 .rating-table th:nth-child(n + 2):nth-child(-n + 5),
